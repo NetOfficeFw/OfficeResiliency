@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ufwb version="1.17">
+    <grammar name="Office Resiliency" start="id:25" author="Jozef" email="jozef.izso@gmail.com" fileextension="bin">
+        <description>Grammar for Microsoft Office resiliency binary data in registry.</description>
+        <structure name="header" id="25" length="0" encoding="UTF-16LE" endian="little" signed="no" strokecolor="FFFFFF" fillcolor="F9C74F">
+            <number name="disabledItemType" id="26" fillcolor="F9C74F" type="integer" length="4"/>
+            <number name="cbData" id="27" fillcolor="F8961E" type="integer" length="4"/>
+            <number name="cbExtraData" id="28" fillcolor="F3722C" type="integer" length="4"/>
+            <string name="module" id="29" fillcolor="90BE6D" type="zero-terminated"/>
+            <string name="friendlyName" id="30" fillcolor="43AA8B" type="zero-terminated"/>
+        </structure>
+    </grammar>
+</ufwb>
