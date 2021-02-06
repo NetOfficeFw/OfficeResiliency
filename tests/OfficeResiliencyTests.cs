@@ -19,6 +19,9 @@ namespace NetOffice.Tools
 
             // Assert
             Assert.IsNotNull(actualResult);
+
+            Assert.AreEqual(@"d:\dev\netofficefw\resiliencyaddincrash\bin\debug\resiliencyaddincrash.dll", actualResult.Module);
+            Assert.AreEqual("resiliencyaddincrash.resiliencyaddincrashconnect", actualResult.FriendlyName);
         }
     }
 }
